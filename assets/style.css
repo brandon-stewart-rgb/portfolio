@@ -10,7 +10,7 @@
     --quaternary: rgb(219, 219, 219);
     --quinary: rgb(139, 139, 139);   
     --senary: rgb(138, 138, 138);   
-    --septenary: rgb(75, 75, 75);   
+    --septenary: rgb(48, 48, 48);   
     --octonary: #000;  
 }
 body {
@@ -20,6 +20,7 @@ background: linear-gradient(180deg, rgba(133,133,133,1) 0%, rgba(189,189,189,1) 
     line-height: 1.42em;
 }
 header {
+    border-top: solid 6px var(--septenary);
     background-color: var(--secondary-color);
     display: flex;
     padding: 18px 38px;
@@ -57,9 +58,11 @@ header nav a {
     display: block;
     padding: 10px ;
     transition:  1s;
+    border-bottom: solid 3px var(--secondary-color);
 }
 header nav a:hover {
-    background-color: var(--octonary) ;
+    background-color: var(--octonary);
+    border-bottom: solid 3px var(--tertiary-color);
 }
 
 .hero {
@@ -70,6 +73,16 @@ header nav a:hover {
     background-image: url(../assets/images/hero.jpg);
     background-size: cover;
     background-position: bottom;
+}
+.hero-text h2{
+    padding: 250px 0 0 35px;
+    opacity: 0.6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--tertiary-color);
+
 }
 
 .portfolio-wrapper {  
