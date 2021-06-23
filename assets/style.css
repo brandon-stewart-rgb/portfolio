@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hero {
+
+}
+
+.portfolio-wrapper {
+   flex-basis: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.portfolio {
+    color: rgb(173, 173, 173);
+    flex: 2;
+    background-color: var(--secondary-color);
+    margin: 5px;
+    
+}
+.portfolio img {
+ width: 100%;
+ border-top: solid 3px var(--secondary-color);
+ border-bottom: solid 2px #fff;
+ 
+}
+
+@media(min-width: 768px) {
+    /* .portfolio-wrapper {
+        display: flex;
+        flex-direction: column;
+    } */
+}
