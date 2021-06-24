@@ -50,7 +50,7 @@ header nav ul li {
     display: inline;
 }
 header nav a {
-    margin: 0 25px;
+    margin: 0 ;
     font-size: 1.45vw;
     color: var(--tertiary-color);
     text-decoration: none;
@@ -138,7 +138,7 @@ header nav a:hover {
 }
 /* about */
 .about-header h3 {
-    width: 50%;
+    width: 100%;
     font-size: 1.4em;
     font-weight: bold;
     text-transform: uppercase;
@@ -150,8 +150,9 @@ header nav a:hover {
     border-radius: 10px 0 0 0;
     width: 50%;
     padding: 20px;
-    margin: 10px auto 50px;
+    margin: 10px auto ;
     display: flex;
+    flex-wrap: nowrap;
     background-color: var(--secondary-color);
 }
 .about img {
@@ -165,10 +166,10 @@ header nav a:hover {
 }
 .about-text {
     color: var(--quaternary);
-    margin: 0 0 0 30px;   
+    margin: 0 0 0 0;   
 }
 .about-text p {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 30px;
 }
 /* footer */
 footer {
@@ -202,8 +203,54 @@ footer li a:hover {
     background-color: var(--octonary);
 }
 /* media queries */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+@media screen and (max-width:768px) and (min-width: 380px) {
+
+    header {
+     
+        width: 100%;
+        justify-content: center;
+    }
+    header h1 a {
+        color: var(--tertiary-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -1px; 
+        padding: 0;
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
+    
+    nav ul {
+        display: block;
+        width: 100%;
+        align-items: center;
+        list-style: none;
+    }
+    nav li {
+        padding: 0 !important;
+        margin: 0!important;
+        width: 100%;
+    }
+    nav a {
+        width: 100%;
+        margin: 0;
+        font-size: 1.2em !important;
+        padding: 0;
+        background-color: var(--octonary);
+        text-align: center;
+    }
+    .hero-text h2 {
+        text-align: center;
+        padding: 30px 0 0 0;
+        font-size: 1.4em;
+        border: solid 1px red;
+        opacity: .6;
+        letter-spacing: 1px;
+        color: var(--secondary-color);
+    }
     .about {
         display: block;
         width: 100%;
@@ -214,67 +261,71 @@ footer li a:hover {
         width: 100%;
      
     }
-    
     .about img {
        display: none;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width:854px) and (min-width: 500px) {
+    .hero {
+        max-height: 160px;
+    }
+    .hero-text h2 {
+        text-align: center;
+        padding: 90px 0 0 0;
+        font-size: 1.8em;
+        border: solid 1px GREEN;
+        opacity: .6;
+        letter-spacing: 1px;
+        color: var(--secondary-color);
+    }
+
     .about {
-        width:90%;
-        border: solid 1px purple;
+        display: block;
+        width: 100%;
+        margin: 3px;
+        padding: 10px;
+    }
+    .about-header {
+        width: 100%;
+     
     }
     .about img {
-        
+       display: none;
     }
-    .hero-text h2 {
-        text-align: center;
-        padding: 180px 0 0 35px;
-        text-transform: uppercase;
-        font-size: 1.2em;
-        letter-spacing: normal;
-        border: solid 1px red;
-        opacity: 1;
-        color: #fff;
-       
+}
+
+@media screen and (max-width:950px) and (min-width: 854px) {
+
+    
+    .about {
+        display: block;
+        width: 95%;
+        margin: 30;
+        padding: 10px;
+    }
+    .about-header {
+        width: 100%;
+    }
+    .about img {
+       display: none;
     }
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .about {
-        width:90%;
-        border: solid 1px gold;
-    }
-    .hero-text h2 {
-        text-align: center;
-        padding: 180px 0 0 35px;
-        text-transform: uppercase;
-        font-size: 2.4em;
-        letter-spacing: normal;
-        border: solid 1px lightblue;
-        opacity: .7;
-        color: #fff;
-       
-    }
-}
+@media screen and (max-width:1377px) and (min-width: 950px) {
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
     .about {
-        width:90%;
-        border: solid 1px green;
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px;
     }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .about {
-        width:70%;
-        border: solid 1px red;
+    .about-header {
+        width: 100%;
     }
 
+    .about-text p {
+        margin: 0 0 20px 0;
+    }
 }
