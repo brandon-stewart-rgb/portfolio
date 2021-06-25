@@ -108,7 +108,7 @@ header nav a:hover {
     list-style: none;
 }
 .portfolio li a {
-    color: var(--tertiary-color);  
+    color: #fff;  
     font-size: 18px;  
     display: block;
     background-color: var(--secondary-color);
@@ -116,7 +116,7 @@ header nav a:hover {
     padding: 20px;
     position: absolute;
     bottom: 150px;
-    opacity: .9;
+    opacity: .8;
     text-transform: uppercase;
 }
 .portfolio li a:hover {
