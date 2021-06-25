@@ -8,7 +8,7 @@ A portfolio of my recent work.
 
 ## General Information
 
-Charged with updating code to be more *accessible* by screen readers, using semantic HTML tags, Horiseon required CSS and HTML updates.  ***Accessibility*** was met by adding alt tags to image tags, commenting all code, removing decorative images (aside) from being called in HTML to CSS, removing excessive classes in HTML and consolidating CSS to match HTML semantic tags.
+A site developed for the purpose of showcasing my online projects with the idea to place more content at a future date.
 
 ### Technologies Used
 
@@ -24,5 +24,5 @@ Charged with updating code to be more *accessible* by screen readers, using sema
 
 
 #### Screenshot
-![Example screenshot](assets/images/screenshot.png)
+![Example screenshot](assets/images/screenshot.png) 
 
