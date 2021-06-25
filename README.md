@@ -19,7 +19,9 @@ A site developed for the purpose of showcasing my online projects with the idea 
         * Github
         * Gitpages
         * GoFullPage
-        * Visual Studio Code
+        * Visual Studio Code 
+
+        
 
 
 
